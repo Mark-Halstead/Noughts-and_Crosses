@@ -5,10 +5,11 @@ let board = [  ['', '', ''],
 ];
 
 // Array with X and O where the players can choose to put in an X or an O
-let players = ['X', 'O'];
+let player = ['X', 'O'];
 
 
 // Which player's turn logic
+
 
 
 // Play condition logic
@@ -19,11 +20,17 @@ let players = ['X', 'O'];
 
 // Win condition logic
 
+function winCondition() {
+  // row win condition
+ 
+  // column win condition
+ 
+  // diagonal win condition
+}
 
 
 
-
-if (checkForWin()) {
+if (winCondition()) {
     console.log(`Player ${currentPlayer} wins!`);
 } else {
     console.log("It's a draw!");
