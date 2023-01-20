@@ -22,12 +22,16 @@ let player = ['X', 'O'];
 
 function winCondition() {
   // row win condition
- 
+  for (let i = 0; i < 3; i++) {
+    if (board[i][0] !== "" && board[i][0] === board[i][1] && board[i][1] === board[i][2]) {
+        return true;
+    }
+  }
   // column win condition
+  
  
   // diagonal win condition
 }
-
 
 
 if (winCondition()) {
